@@ -32,7 +32,7 @@ with DAG(dag_id="example_task_group", tags=["example"]) as dag:
 
     # [END howto_task_group_section_2]
 
-    # end = EmptyOperator(task_id='end')
+    end = EmptyOperator(task_id='end')
 
     start >> section_1 >> section_2 >> end
 # [END howto_task_group]
