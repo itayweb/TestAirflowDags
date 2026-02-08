@@ -34,5 +34,5 @@ with DAG(dag_id="example_task_group", tags=["example"]) as dag:
 
     end = EmptyOperator(task_id='end')
 
-    start >> section_1 >> section_2 #>> end
+    start >> section_1 >> section_2 >> end
 # [END howto_task_group]
